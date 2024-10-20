@@ -5,10 +5,10 @@ import { testPrecisionIrrigation } from './precisionIrrigation';
 
 // Run all test cases
 console.log("Running Sensor Test:");
-testSensor();
+console.log(testSensor());
 
 console.log("\nRunning CropMonitor Test:");
-testCropMonitor();
+console.log(testCropMonitor());
 
 console.log("\nRunning PrecisionIrrigation Test:");
-testPrecisionIrrigation();
+console.log(testPrecisionIrrigation());

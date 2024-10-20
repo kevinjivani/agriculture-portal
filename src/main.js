@@ -6,8 +6,8 @@ const cropMonitor_1 = require("./cropMonitor");
 const precisionIrrigation_1 = require("./precisionIrrigation");
 // Run all test cases
 console.log("Running Sensor Test:");
-(0, sensor_1.testSensor)();
+console.log((0, sensor_1.testSensor)());
 console.log("\nRunning CropMonitor Test:");
-(0, cropMonitor_1.testCropMonitor)();
+console.log((0, cropMonitor_1.testCropMonitor)());
 console.log("\nRunning PrecisionIrrigation Test:");
-(0, precisionIrrigation_1.testPrecisionIrrigation)();
+console.log((0, precisionIrrigation_1.testPrecisionIrrigation)());

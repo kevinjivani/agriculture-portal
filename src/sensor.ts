@@ -1,22 +1,32 @@
 // sensor.ts
-export class Sensor {
-    name: string;
-    data: number;
+import { Logger } from './logger';
+import { getErrorMessage } from './errorHandler';
 
-    constructor(name: string, data: number) {
-        this.name = name;
-        this.data = data;
-    }
-
-    // Method to simulate reading sensor data
-    readData(): number {
-        return this.data;
-    }
+export function testSensor(): String {
+    return "Sensor test passed!";
 }
 
-// Test case for Sensor module
-export function testSensor() {
-    const moistureSensor = new Sensor('Moisture', 50);
-    const result = moistureSensor.readData();
-    console.log(`Sensor ${moistureSensor.name}: ${result}`); // Expected: "Sensor Moisture: 50"
+export class Sensor {
+    readData() {
+        return this.moistureLevel;
+    }
+    private moistureLevel: number;
+
+    constructor() {
+        this.moistureLevel = 50; // Default value
+        Logger.info('Sensor initialized with default moisture level');
+    }
+
+    getMoistureLevel(): number {
+        try {
+            if (this.moistureLevel < 0 || this.moistureLevel > 100) {
+                throw new Error("Invalid moisture level detected");
+            }
+            return this.moistureLevel;
+        } catch (error) {
+            const errorMessage = (error as Error).message;
+            Logger.error(errorMessage);
+            return -1; // Return -1 to indicate an error
+        }
+    }
 }

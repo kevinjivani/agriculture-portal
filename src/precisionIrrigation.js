@@ -20,7 +20,7 @@ class PrecisionIrrigation {
 exports.PrecisionIrrigation = PrecisionIrrigation;
 // Test case for PrecisionIrrigation module
 function testPrecisionIrrigation() {
-    const moistureSensor = new sensor_1.Sensor('Moisture', 20);
+    const moistureSensor = new sensor_1.Sensor();
     const irrigationSystem = new PrecisionIrrigation(moistureSensor);
     const result = irrigationSystem.irrigate();
     console.log(result); // Expected: "Irrigation ON: Soil moisture is low."
