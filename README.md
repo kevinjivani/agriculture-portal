@@ -76,6 +76,43 @@ Sensor Moisture: 50
 Crop health is good!
 Irrigation ON: Soil moisture is low.
 ```
+## To run all the tests:
+```
+npm test
+```
+## GitHub CLI Setup
+To use GitHub CLI, after installation, run the following command to authenticate with your GitHub account:
+
+```
+gh auth login
+```
+
+## GitHub Actions Setup
+
+1. Create the Workflow Directory: In your repository, create a .github/workflows directory in the root of your project.
+
+2. Create a Workflow File: Inside the .github/workflows directory, create a workflow YAML file
+
+```
+git add .github/workflows/ci.yml
+git commit -m "Add GitHub Actions workflow for CI"
+git push origin main
+```
+
+   I have three yml files:
+
+   1). ci.yml
+   2). newci.yml
+   3). test.yml
+
+## Screenshots of Workflow Logs and Console Output
+
+![GitHub Actions Workflow Logs](images/workflow-logs.png)
+![Jest Test Running](images/test.png)
+
+
+
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
