@@ -107,9 +107,8 @@ git push origin main
 
 ## Screenshots of Workflow Logs and Console Output
 
-![GitHub Actions Workflow Logs](https://drive.google.com/file/d/1pLSkdejlJHlL4dqtf06qT6WkdL51NBx0/view?usp=drive_link)
-![Jest Test Running](https://drive.google.com/file/d/1LyYX6cjaq90JEWYOX9oWL-RKXBCgcKkt/view?usp=drive_link)
-
+![GitHub Actions Workflow Logs](https://drive.google.com/uc?id=1pLSkdejlJHlL4dqtf06qT6WkdL51NBx0)
+![Jest Test Running](https://drive.google.com/uc?id=1LyYX6cjaq90JEWYOX9oWL-RKXBCgcKkt)
 
 
 
