@@ -107,8 +107,8 @@ git push origin main
 
 ## Screenshots of Workflow Logs and Console Output
 
-![GitHub Actions Workflow Logs](images/workflow-logs.png)
-![Jest Test Running](images/test.png)
+![GitHub Actions Workflow Logs](https://drive.google.com/file/d/1pLSkdejlJHlL4dqtf06qT6WkdL51NBx0/view?usp=drive_link)
+![Jest Test Running](https://drive.google.com/file/d/1LyYX6cjaq90JEWYOX9oWL-RKXBCgcKkt/view?usp=drive_link)
 
 
 
