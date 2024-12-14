@@ -1,4 +1,7 @@
 {
+  "name":"@kevin_jivani/agriculture-portal",
+  "version": "1.0.0",
+  "description": "Agriculture Portal for precision farming and crop monitoring",
   "main": "dist/main.js",
   "devDependencies": {
     "@types/jest": "^29.5.13",

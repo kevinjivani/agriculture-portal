@@ -1,0 +1,42 @@
+name: Jest Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # Use the appropriate Node.js version for your project
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run TypeScript compilation (if necessary)
+      - name: Compile TypeScript
+        run: npx tsc --noEmit # Ensures the TypeScript code is error-free without emitting files
+
+      # Step 5: Run tests
+      - name: Run tests
+        run: npm test
+
+      # (Optional) Step 6: Upload test results (if tests produce a report)
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: path/to/test-results
